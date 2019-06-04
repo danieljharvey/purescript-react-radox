@@ -18,11 +18,12 @@ radoxConsumer
 radoxConsumer context this renderer = do
   props <- React.getProps this
   localState <- React.getState this
-  let render { state, dispatch } 
+  let render { dispatch, getState, state } 
         = renderer { props: props
                    , state: state
                    , localState: localState
                    , dispatch: dispatch
+                   , getState: getState
                    } 
   pure $ React.createLeafElement context.consumer
           { children: render }

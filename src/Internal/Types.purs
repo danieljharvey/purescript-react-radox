@@ -18,6 +18,7 @@ type ReactRadoxRenderMethod props state localState action
       , localState :: localState
       , state :: state
       , dispatch :: (action -> Effect Unit)
+      , getState :: Effect state
       } -> React.ReactElement
     ) 
 
