@@ -35,13 +35,12 @@ radoxProvider context combinedReducer initialState
     render' this store = do
         props <- React.getProps this
         state <- React.getState this
-        storeState <- store.getState
         pure $ 
             React.createElement 
               context.provider 
               { value: { dispatch: store.dispatch
                        , getState: store.getState
-                       , state: storeState
+                       , state: state.pureduxState
                        } 
               }
               props.children
