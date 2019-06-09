@@ -6,6 +6,8 @@ Purescript Radox is a small state management library designed to plug into thing
 
 This library provides components for [Purescript React](https://github.com/purescript-contrib/purescript-react) to use Radox via React Context.
 
+Documentation available on [Pursuit](https://pursuit.purescript.org/packages/purescript-react-radox).
+
 #### OK. That's painfully vague, could I perhaps have an example?
 
 Sure thing. Why not crack open the
